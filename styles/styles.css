@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+.text-container {
+  margin: 50px 150px 0 150px;
+}
+.text-container h1 {
+  margin-top: 120px;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1.3rem;
+  color: hsl(0, 6%, 24%);
+}
+.text-container span {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+.text-container p {
+  color: hsl(0, 36%, 70%);
+  line-height: 1.8rem;
+  padding-right: 40px;
+  margin: 30px 0;
+}
+.text-container button {
+  border: none;
+  height: 50px;
+  width: 90px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px #eee;
+  border-radius: 40px;
+  background-image: linear-gradient(90deg, hsl(0, 80%, 86%) 0%, hsl(0, 74%, 74%) 100%);
+  transition: 0.3s;
+  cursor: pointer;
+  margin-left: -40px;
+  position: absolute;
+}
+.text-container button:hover {
+  background-image: linear-gradient(90deg, hsl(0, 80%, 86%) 100%, hsl(0, 74%, 74%) 0%);
+  box-shadow: 2px 2px 20px hsl(0, 36%, 70%);
+}
+.text-container input {
+  width: 300px;
+  height: 50px;
+  border: 1px solid hsl(0, 36%, 70%);
+  border-radius: 40px;
+  background-color: transparent;
+  font: inherit;
+  padding-left: 20px;
+  color: hsl(0, 6%, 24%);
+  margin-bottom: 10px;
+}
+.text-container input:focus {
+  border: 2px solid hsl(0, 36%, 70%);
+}
+.text-container input::-moz-placeholder {
+  color: hsl(0, 36%, 70%);
+}
+.text-container input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+.text-container .input-error {
+  color: inherit;
+}
+.text-container .error-icon {
+  display: none;
+  margin-left: 227px;
+  margin-top: -48px;
+  position: absolute;
+}
+.text-container .input-error:focus {
+  border: 3px solid hsl(0, 93%, 68%);
+}
+.text-container #error-message {
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding-left: 20px;
+  display: none;
+}
+.text-container .mobile-hero {
+  display: none;
+}
+
+@media screen and (max-width: 980px) {
+  #logo {
+    width: 100px;
+  }
+  .mobile-hero {
+    display: flex !important;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    align-content: center;
+    justify-content: center;
+  }
+  .text-container {
+    margin: 40px 50px 50px 50px;
+  }
+  .text-container h1 {
+    margin-top: 45px;
+    font-size: 2.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    color: hsl(0, 6%, 24%);
+  }
+  .text-container p {
+    text-align: center;
+    padding-right: 0;
+  }
+  .text-container input {
+    width: 250px;
+  }
+  .text-container button {
+    width: 70px;
+  }
+  .text-container .error-icon {
+    display: none;
+    margin-left: 181px;
+    margin-top: -48px;
+    position: absolute;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: url(../images/bg-pattern-desktop.svg) no-repeat, linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background: linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .container {
+    display: block;
+  }
+  .image-container {
+    display: none;
+  }
+}/*# sourceMappingURL=styles.css.map */

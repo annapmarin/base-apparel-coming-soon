@@ -1,0 +1,43 @@
+@use 'variables';
+@import 'variables';
+@import 'text-container';
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+html {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+}
+
+body {
+  background: url(../images/bg-pattern-desktop.svg) no-repeat, linear-gradient($color1, $color2);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background: linear-gradient($color1, $color2);
+    height: fit-content;
+  }
+  
+  .container {
+    display: block;
+  }
+
+  .image-container {
+    display: none;
+  }
+}
